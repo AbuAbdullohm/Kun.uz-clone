@@ -1,0 +1,112 @@
+.header-wrapper {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 12px 0;
+}
+
+.header-menu {
+  margin-right: auto;
+  margin-left: 50px;
+  ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+    a {
+      margin-right: 20px;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        color: #013cb3;
+      }
+    }
+  }
+}
+
+.header-lang {
+  display: flex;
+  align-self: center;
+  position: relative;
+}
+
+.lang-block {
+  width: 30px;
+  height: 29.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  z-index: 0;
+
+  .active {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: fit-content;
+    background-color: $base-background-color;
+    padding: 5px 40px 6px 10px;
+    border-radius: 20px;
+    z-index: -1;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .chevron {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $white;
+
+    svg{
+        width: 50%;
+        height: 50%;
+    }
+  }
+}
+
+.languages {
+    display: none;
+  position: absolute;
+  right: 41px;
+  top: 29px;
+  width: 121px;
+  background: $white;
+  //   z-index: 11;
+  border-radius: 0 0 20px 20px;
+
+  a{
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background-color: $base-background-color;
+  border-radius: 50%;
+}

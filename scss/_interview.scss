@@ -1,0 +1,109 @@
+@import "variables.scss";
+
+.interview-wrapper {
+  width: 100%;
+  background-color: $base-background-color;
+
+  .interviews {
+    padding-top: 25px;
+    padding-bottom: 45px;
+  }
+
+  .interview-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    span {
+      color: #000000;
+      font-size: 20px;
+      font-weight: bold;
+      position: relative;
+      display: block;
+      padding-left: 25px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background-color: #17206a;
+      }
+      &:before {
+        width: 15px;
+        height: 15px;
+        background: transparent;
+        border: 4px solid #17206a;
+        display: block;
+      }
+    }
+
+    a {
+      font-weight: 500;
+      color: blue;
+    }
+  }
+}
+
+.interview-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 60px;
+
+  a {
+    width: 21%;
+
+    &:hover{
+        .item-title{
+            color: blue;
+        }
+    }
+    .item {
+        position: relative;
+        background-color: #fff;
+        padding-bottom: 20px;
+
+      &-img {
+        width: 95%;
+        background-color: $regions-background-color;
+        transform: translateX(-30px) translateY(-20px);
+
+        img {
+          width: 100%;
+          transform: translateX(-8px) translateY(-4px);
+        }
+      }
+
+      &-subtitle {
+        font-size: 30px;
+        color: #e3e3e3;
+        font-weight: 700;
+        position: absolute;
+        right: -56px;
+        height: 35px;
+        width: 160px;
+        top: 75px;
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        display: block;
+      }
+
+      &-title {
+        color: #000000;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 23px;
+        padding: 0 20px 10px;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
