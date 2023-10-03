@@ -1,0 +1,61 @@
+@import "variables.scss";
+@import "header.scss";
+@import "top-news.scss";
+@import "actual-news.scss";
+@import "interview.scss";
+@import "stories.scss";
+@import "articles.scss";
+@import "business.scss";
+@import "footer.scss";
+
+.main {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  width: 95vw;
+  margin: 0 auto;
+}
+
+a,
+a:-webkit-any-link {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.jump-top {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  text-indent: 100%;
+  background: #2c59aa url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  // visibility: hidden;
+  // opacity: 0;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s,
+    background-color 0.3s 0s;
+  -o-transition: opacity 0.3s 0s, visibility 0s 0.3s, background-color 0.3s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s, background-color 0.3s 0s;
+  z-index: 999 !important;
+
+
+  img{
+    transform: translateX(-28px) translateY(13px);
+  }
+}
+
