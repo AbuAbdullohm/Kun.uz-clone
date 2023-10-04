@@ -45,13 +45,13 @@ a:-webkit-any-link {
   right: 20px;
   text-indent: 100%;
   background: #2c59aa url(../img/cd-top-arrow.svg) no-repeat center 50%;
-  // visibility: hidden;
-  // opacity: 0;
-  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s,
-    background-color 0.3s 0s;
-  -o-transition: opacity 0.3s 0s, visibility 0s 0.3s, background-color 0.3s 0s;
-  transition: opacity 0.3s 0s, visibility 0s 0.3s, background-color 0.3s 0s;
+  opacity: 0.7;
+  transition: opacity 0.3s 0s;
   z-index: 999 !important;
+
+  &:hover{
+    opacity: 1;
+  }
 
 
   img{
