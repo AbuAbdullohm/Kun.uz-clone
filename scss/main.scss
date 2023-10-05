@@ -6,6 +6,7 @@
 @import "stories.scss";
 @import "articles.scss";
 @import "business.scss";
+@import "video&foto-news.scss";
 @import "footer.scss";
 
 .main {
@@ -22,6 +23,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -45,17 +47,16 @@ a:-webkit-any-link {
   right: 20px;
   text-indent: 100%;
   background: #2c59aa url(../img/cd-top-arrow.svg) no-repeat center 50%;
-  opacity: 0.7;
-  transition: opacity 0.3s 0s;
+  opacity: 0;
+  transition: opacity 0.3s 0s,
+  all 1s ease;
   z-index: 999 !important;
 
-  &:hover{
+  &:hover {
     opacity: 1;
   }
 
-
-  img{
+  img {
     transform: translateX(-28px) translateY(13px);
   }
 }
-
