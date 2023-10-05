@@ -51,7 +51,7 @@
       width: 30px;
       height: 30px;
 
-      a{
+      a {
         transition: all 0.3s ease;
       }
       &:hover {
@@ -59,6 +59,7 @@
           -webkit-transform: translateY(-5px);
           -ms-transform: translateY(-5px);
           transform: translateY(-5px);
+          color: red;
         }
       }
     }

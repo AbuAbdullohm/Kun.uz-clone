@@ -8,11 +8,42 @@
   align-items: center;
   width: 100%;
   padding: 12px 0;
+
+  @media screen and (max-width: 1024px) {
+    justify-content: center;
+  }
+
+  &-logo {
+    @media screen and (max-width: 1024px) {
+      order: 2;
+      margin-left: auto;
+
+      img {
+        width: 60px;
+      }
+    }
+  }
+
+  .mobile-menu {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 .header-menu {
   margin-right: auto;
   margin-left: 50px;
+
+  @media screen and (max-width: 1400px) {
+    margin-left: 20px;
+  }
+  @media screen and (max-width: 1024px) {
+    order: 1;
+    display: none;
+  }
+
   ul {
     display: flex;
     align-items: center;
@@ -20,7 +51,7 @@
 
     a {
       margin-right: 20px;
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 700;
       text-transform: uppercase;
       transition: all 0.3s ease;
@@ -28,6 +59,10 @@
 
       &:hover {
         color: #013cb3;
+      }
+
+      @media screen and (max-width: 1400px) {
+        margin-right: 15px;
       }
     }
   }
@@ -37,6 +72,11 @@
   display: flex;
   align-self: center;
   position: relative;
+
+  @media screen and (max-width: 1024px) {
+    order: 3;
+    margin-left: auto;
+  }
 }
 
 .lang-block {
@@ -50,6 +90,10 @@
   margin-right: 10px;
   cursor: pointer;
   z-index: 0;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 
   .active {
     cursor: pointer;
@@ -75,24 +119,24 @@
     border-radius: 50%;
     background-color: $white;
 
-    svg{
-        width: 50%;
-        height: 50%;
+    svg {
+      width: 50%;
+      height: 50%;
     }
   }
 }
 
 .languages {
-    display: none;
+  display: none;
   position: absolute;
   right: 41px;
   top: 29px;
   width: 121px;
   background: $white;
-  //   z-index: 11;
+  z-index: 11;
   border-radius: 0 0 20px 20px;
 
-  a{
+  a {
     text-align: center;
     display: block;
     margin: 10px 0;

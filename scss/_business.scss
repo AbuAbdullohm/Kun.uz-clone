@@ -44,7 +44,8 @@
   .business {
     width: 95%;
     position: relative;
-    padding: 35px 0;
+    padding: 35px 20px;
+    overflow: hidden;
 
     display: flex;
     justify-content: space-between;
@@ -96,7 +97,7 @@
 
     #right {
       position: absolute;
-      right: -20px;
+      right: 20px;
       transform: rotate(-90deg);
     }
   }
