@@ -48,12 +48,12 @@ a:-webkit-any-link {
   text-indent: 100%;
   background: #2c59aa url(../img/cd-top-arrow.svg) no-repeat center 50%;
   opacity: 0;
-  transition: opacity 0.3s 0s,
-  all 1s ease;
+  transition: opacity 0.3s ease,
+  all 0.5s ease;
   z-index: 999 !important;
 
   &:hover {
-    opacity: 1;
+    opacity: 1 !important;
   }
 
   img {

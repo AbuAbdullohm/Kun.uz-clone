@@ -41,8 +41,15 @@
     color: #2246c5 !important;
     text-decoration: none;
 
+    &:hover{
+      svg{
+        transform: translateX(10px);
+      }
+    }
+
     svg {
-      margin-left: 10px;
+      margin-left: 5px;
+      transition: all 0.4s ease;
     }
   }
 }
@@ -52,9 +59,18 @@
   flex-wrap: wrap;
   gap: 20px;
 
+  @media screen and (max-width: 1200px) {
+    gap: 15px;
+  }
+
   .article {
     width: 32%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1024px) {
+      width: 49%;
+      margin-bottom: 15px;
+    }
 
     &:hover {
       .article-title {

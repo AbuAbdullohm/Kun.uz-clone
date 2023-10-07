@@ -47,6 +47,16 @@
     a {
       font-weight: 500;
       color: blue;
+      &:hover {
+        svg {
+          transform: translateX(10px);
+        }
+      }
+
+      svg {
+        margin-left: 5px;
+        transition: all 0.3s ease;
+      }
     }
   }
 }
@@ -57,27 +67,46 @@
   justify-content: flex-end;
   gap: 60px;
 
+  @media screen and (max-width: 1024px) {
+    gap: 15px;
+  }
+
   a {
     width: 21%;
 
-    &:hover{
-        .item-title{
-            color: blue;
-        }
+    @media screen and (max-width: 1024px) {
+      width: 25%;
+    }
+
+    &:hover {
+      .item-title {
+        color: blue;
+      }
     }
     .item {
-        position: relative;
-        background-color: #fff;
-        padding-bottom: 20px;
+      position: relative;
+      background-color: #fff;
+      padding-bottom: 20px;
 
       &-img {
         width: 95%;
         background-color: $regions-background-color;
         transform: translateX(-30px) translateY(-20px);
 
+        @media screen and (max-width: 1024px) {
+          width: 100%;
+          transform: translateX(0) translateY(0);
+          background-color: #fff;
+          margin-bottom: 10px;
+        }
+
         img {
           width: 100%;
           transform: translateX(-8px) translateY(-4px);
+
+          @media screen and (max-width: 1024px) {
+            transform: translateX(0) translateY(0);
+          }
         }
       }
 
@@ -94,6 +123,13 @@
         -ms-transform: rotate(-90deg);
         transform: rotate(-90deg);
         display: block;
+
+        @media screen and (max-width: 1024px) {
+          top: 200px;
+          width: 100px;
+          right: -35px;
+          font-size: 24px;
+        }
       }
 
       &-title {
@@ -103,6 +139,11 @@
         line-height: 23px;
         padding: 0 20px 10px;
         transition: all 0.3s ease;
+
+        @media screen and (max-width: 1024px) {
+          font-size: 14px;
+          padding: 10px 30px 10px 10px;
+        }
       }
     }
   }
