@@ -231,7 +231,8 @@
   position: relative;
   margin-right: 20px;
   cursor: pointer;
-  height: 19px;
+  height: 40.5px;
+  line-height: 40.5px;
 }
 @media screen and (max-width: 1400px) {
   .regions-list .list li {
@@ -239,7 +240,17 @@
     font-size: 10px;
   }
 }
+.regions-list .list li .active {
+  color: #ffffff;
+  background-color: #17206a;
+  padding: 0 15px;
+}
+.regions-list .list li .active:hover {
+  color: #ffffff;
+}
 .regions-list .list li a {
+  display: block;
+  height: 100%;
   color: #585858;
   font-size: 12px;
   font-weight: 500;
@@ -252,7 +263,7 @@
 .regions-list .list li::before {
   position: absolute;
   left: -10px;
-  top: 15%;
+  top: 32%;
   content: "";
   width: 1px;
   height: 15px;
@@ -261,7 +272,6 @@
 @media screen and (max-width: 1400px) {
   .regions-list .list li::before {
     left: -6px;
-    top: 0;
   }
 }
 .regions-list .list li:first-child::before {
@@ -398,7 +408,7 @@
   display: flex;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .top-news__small-items {
     flex-direction: column;
   }
@@ -406,7 +416,7 @@
 .top-news__small-items a {
   width: 50%;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .top-news__small-items a {
     width: 100%;
   }
@@ -446,16 +456,16 @@
   align-items: center;
   color: #8f8f8f;
   margin-bottom: 10px;
-  font-size: 12px;
+  font-size: 10px;
 }
 .small-news__content .content-date span {
   margin-left: 10px;
 }
 .small-news__content .small-content__title {
   display: block;
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
   transition: all 0.3s ease;
 }
 
@@ -569,7 +579,7 @@
   height: 15px;
   border-radius: 100%;
   background-color: #17206a;
-  animation: title-before 10s ease infinite alternate;
+  animation: title-before 30s ease infinite alternate;
 }
 .latest-news .latest-title span:before {
   width: 15px;
@@ -577,7 +587,7 @@
   background: transparent;
   border: 4px solid #17206a;
   display: block;
-  animation: title-before 10s ease infinite alternate;
+  animation: title-before 30s ease infinite alternate;
 }
 .latest-news .latest-links__wrapper {
   margin-bottom: 25px;
@@ -615,9 +625,9 @@
   margin-left: 10px;
 }
 .latest-news .latest-link .latest-date__title {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
-  line-height: 21px;
+  line-height: 18px;
   color: #000000;
   transition: all 0.3s ease;
 }
