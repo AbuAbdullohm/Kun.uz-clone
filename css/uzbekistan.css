@@ -761,4 +761,8 @@ a:-webkit-any-link {
   margin: 70px auto 100px;
   color: #ffffff;
   background-color: #17206a;
+  transition: all 0.3s ease;
+}
+.more-news-btn:hover {
+  background-color: #0f3d99;
 }/*# sourceMappingURL=uzbekistan.css.map */

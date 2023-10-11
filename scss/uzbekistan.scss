@@ -571,4 +571,9 @@ a:-webkit-any-link {
     margin: 70px auto 100px;
     color: $white;
     background-color: $regions-background-color;
+    transition: all 0.3s ease;
+
+    &:hover{
+      background-color: #0f3d99;
+    }
 }
